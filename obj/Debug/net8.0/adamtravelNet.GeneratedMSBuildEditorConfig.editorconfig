@@ -26,6 +26,34 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\project\adamtravelNet\adamtravelNet
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/project/adamtravelNet/adamtravelNet/my-blazor-project/App.razor]
+build_metadata.AdditionalFiles.TargetPath = bXktYmxhem9yLXByb2plY3RcQXBwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/project/adamtravelNet/adamtravelNet/my-blazor-project/Pages/Counter.razor]
+build_metadata.AdditionalFiles.TargetPath = bXktYmxhem9yLXByb2plY3RcUGFnZXNcQ291bnRlci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/project/adamtravelNet/adamtravelNet/my-blazor-project/Pages/Home.razor]
+build_metadata.AdditionalFiles.TargetPath = bXktYmxhem9yLXByb2plY3RcUGFnZXNcSG9tZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/project/adamtravelNet/adamtravelNet/my-blazor-project/Pages/Weather.razor]
+build_metadata.AdditionalFiles.TargetPath = bXktYmxhem9yLXByb2plY3RcUGFnZXNcV2VhdGhlci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/project/adamtravelNet/adamtravelNet/my-blazor-project/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = bXktYmxhem9yLXByb2plY3RcX0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/project/adamtravelNet/adamtravelNet/my-blazor-project/Layout/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = bXktYmxhem9yLXByb2plY3RcTGF5b3V0XE1haW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-lx9805dp91
+
+[C:/project/adamtravelNet/adamtravelNet/my-blazor-project/Layout/NavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = bXktYmxhem9yLXByb2plY3RcTGF5b3V0XE5hdk1lbnUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-awf8sqlvg2
+
 [C:/project/adamtravelNet/adamtravelNet/Views/AdamTravel/About.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRhbVRyYXZlbFxBYm91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
