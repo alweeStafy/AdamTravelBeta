@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("adamtravelNet")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+286aec1171189d29009350c77f8ce51a25cf5e7e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+362806f340173460fab1054155cecc5e2ea86ceb")]
 [assembly: System.Reflection.AssemblyProductAttribute("adamtravelNet")]
 [assembly: System.Reflection.AssemblyTitleAttribute("adamtravelNet")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
