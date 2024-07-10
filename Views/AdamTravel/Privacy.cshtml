@@ -1,0 +1,56 @@
+﻿@using Microsoft.AspNetCore.Mvc.Localization
+@* @model adamtravelNet.Models.Booking *@@* แบบ1ก่อน *@
+@model IEnumerable<adamtravelNet.Models.Booking>
+@inject IViewLocalizer Localizer
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>@Localizer["Privacy"]</title>
+    <!-- ===============================================-->
+    <!--    Stylesheets-->
+    <!-- ===============================================-->
+    <link href="vendors/plyr/plyr.css" rel="stylesheet" />
+    <link href="lib/css/theme.css" rel="stylesheet" />
+    <link href="~/css/AdamTravelTheme.css" rel="stylesheet" />
+    <link href="~/css/theme.css" rel="stylesheet" />
+</head>
+<body class="pt-8">
+    <div class="pt-4 px-4">
+        <b6>@Localizer["Customers reserved item"]</b6>
+        <h2>@Localizer["Customer booking"]</h2>
+    </div>        
+    <div class="px-6 pt-4 py-4">
+        @* แบบ1ก่อน *@
+        @* <p>Customer : @Model.Id</p>
+        <p>Package : @Model.Name</p>
+        <p>@Model.Date Days</p> *@
+        @* แบบ2ก่อน *@
+        @foreach(var booking in Model)
+        {
+            <div class="btn-outline-primarybooking">
+                <h4 style="color:#299EF3">Customer : @booking.Id</h4>
+                <h4>Package : @booking.Name</h4>
+                <h4>Time : @booking.Date Days</h4>
+                <form action="/action_page.php" class="form-container">
+
+                        <h4>Status: <i class="material-symbols--pending align-content-center" style="color:#299EF3" alt="Pending" title="Pending"></i></h4>
+
+                    <label for="email"><b>Call back</b></label>
+                    <input type="text" placeholder="Do you call back to customer?" name="email" required>
+
+                    <label for="psw"><b>Note</b></label>
+                    <input type="password" placeholder="Note your customer status." name="psw" required>
+
+                    <button type="submit" class="btn">Done</button>
+                    <button type="button" class="btn cancel" onclick="closeForm()">Cancel</button>
+                </form>
+                @* <hr></hr> *@
+            </div>
+            <hr></hr>
+            
+        }        
+    </div>
+    </body>
+</html>
+

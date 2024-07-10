@@ -1,0 +1,132 @@
+﻿@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer Localizer
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Adam Travel & Tour</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link href="~/css/AdamTravelTheme.css" rel="stylesheet" asp-append-version="true"/>
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/adamtravelNet.styles.css" asp-append-version="true" />
+    <link href="~/css/theme.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="~/css/flag-icons.css" rel="stylesheet" />
+    <link href="~/css/flag-icons.min.css" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top py-1 backdrop shadow-lg" data-navbar-on-scroll="data-navbar-on-scroll">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-start fw-bold fs-2" asp-controller="AdamTravel" asp-action="Index">
+                    <img class="d-inline-block align-top img-fluid"
+                         src="~/lib/img/gallery/logo-icon.png"
+                         alt=""
+                         width="250"
+                          /><span class="text-primary fs-3 ps-1 pt-5"></span>
+                </a>
+
+                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon navbar-light"></span>
+                </button>
+                <div class="collapse navbar-collapse border-top border-lg-0 mt-4 mt-lg-0 pt-4 fs-2" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto pt-2 pt-lg-0 fw-semi-bold px-3">
+                        <li class="nav-item px-2">
+                            <a class="nav-link active" asp-area="" asp-controller="AdamTravel" asp-action="Index">@Localizer["Home"]</a>
+                        </li>
+                        
+                        <li class="nav-item px-2">
+                            <a class="nav-link text-600" href="#featuresVideos">@Localizer["Video"]</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link text-600" href="#places">@Localizer["Destinations"]</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link text-600" href="#booking">@Localizer["Booking"]</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link text-600" asp-area="" asp-controller="AdamTravel" asp-action="Privacy">@Localizer["Privacy"]</a>
+                        </li>
+                        <li class="nav-link px-2">
+                            <partial name="_culture" class="nav-link text-200"></partial>
+                        </li>
+
+                        
+                        
+                    </ul>
+                    @* <div class="dropdown">
+                        <button class="dropbtn px-2 py-2">EN<svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24"><path fill="currentColor" d="M17 9.17a1 1 0 0 0-1.41 0L12 12.71L8.46 9.17a1 1 0 0 0-1.41 0a1 1 0 0 0 0 1.42l4.24 4.24a1 1 0 0 0 1.42 0L17 10.59a1 1 0 0 0 0-1.42" /></svg></button>
+                        <div class="dropdown-content">                            
+                            <a href="https://localhost:7181/?culture=th-TH">
+                                <div class="">
+                                     <span class="h5 d-sm-inline-flex pe-sm-5"><img class="px-2" src="~/lib/img/icons/th-1-1.svg" style="width:100%">ไทย</span>
+                                     <div class="container-sm py-0"></div>
+                                 </div>
+                            </a>
+                            <a href="#">
+                                <div class="">
+                                    <span class="h5 d-sm-inline-flex pe-sm-5"><img class="px-2" src="~/lib/img/icons/my-1-1.svg" style="width:100%">MY</span>
+                                    <div class="container-sm py-0"></div>
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="">
+                                    <span class="h5 d-sm-inline-flex pe-sm-5"><img class="px-2" src="~/lib/img/icons/cn-1-1.svg" style="width:100%">CN</span>
+                                    <div class="container-sm py-0"></div>
+                                </div>
+                            </a>
+                            <a href="https://localhost:7181/?culture=en-US">
+                                <div class="">
+                                    <span class="h5 d-sm-inline-flex pe-sm-5"><img class="px-2" src="~/lib/img/icons/gb-1-1.svg" style="width:100%">EN</span>
+                                    <div class="container-sm py-0"></div>
+                                </div>
+                            </a> *@                                                    
+                        
+                    @* <div class="header__hotline_book_wrap">
+                        <div class="header__lang">
+                            <a href="#"><span>EN</span><i class="navbar-dark"></i></a>
+                            <ul class="header__lang_box">
+                                <li><a href="#"><img src="assets/img/flag/flag_vn.png" /><span>TH</span></a></li>
+                                <li><a href="#"><img src="assets/img/flag/flag_en.jpg" /><span>EN</span></a></li>
+                            </ul>
+                        </div>
+                     </div> *@
+                    <form class="ps-lg-6 nav-link">
+                        <button class="btn order-3 text-200 bg-primary py-1"
+                                type="submit" href="#" style="background-color:#fff">
+
+                            <i class="px-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+                                    <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
+                                </svg><p>@Localizer["Contact us"] :</p>  <span>0987654321</span>
+                            </i>                            
+                            
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+   
+    <div class="">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    @* <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script> *@
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="~/js/bootstrap-navbar.js"></script>
+    <script src="~/js/theme.js"></script>
+    <script type="text/javascript" src="assets/js/main.js"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+
+</body>
+</html>
+
+    
